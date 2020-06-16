@@ -4,24 +4,13 @@ ano = int(input('Digite o ano (aaaa): '))
 
 bissexto = ano % 4
 
-if 1 <= dia <= 31 and mes != 2:
-    print(f'{dia} é válido.')
+if 1 <= dia <= 31 and 1 <= mes <= 12 and ano > 0 and mes != 2:
+    print(f'{dia}/{mes}/{ano} é uma data válida.')
 elif 1 <= dia <= 29 and mes == 2 and bissexto == 0:
-        print(f'{dia} é válido')
+    print(f'{dia}/{mes}/{ano} é uma data válida e é um ano bissexto.')
 else:
-    print('Dia incorreto.')
+    print(f'{dia}/{mes}/{ano} não é uma data válida.')
 
-if 1 <= mes <= 12:
-    print(f'{mes} é válido.')
-else:
-    print('Mês incorreto')
-
-if ano == 2020:
-    print(f'{ano} é válido.')
-else:
-    print('Não é uma data atual.')
-
-print(f'{dia}/{mes}/{ano} é uma data válida.')
 
 
 
