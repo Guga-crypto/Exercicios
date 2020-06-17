@@ -8,6 +8,6 @@ if 0 < num < 1000:
     centena = num
     dezena = int(dezena)
     centena = int(centena)
-    print(f'{centena}, {dezena}, {unidade}')
+    print(f'{centena} centenas, {dezena} dezenas e {unidade} unidades')
 else:
     print('Valor inválido.')
