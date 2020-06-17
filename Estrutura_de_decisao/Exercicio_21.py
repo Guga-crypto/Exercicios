@@ -2,7 +2,7 @@ print('\n\t\t- Caixa eletrônico -')
 print('\nNotas Dísponiveis: 1, 5, 10, 50 e 100')
 print('\nValor minimo de saque: R$ 10,00')
 print('Valor máximo de saque: R$ 600,00')
-saque = float(input('Digite o valor a ser sacado: '))
+saque = int(input('\nDigite o valor a ser sacado: '))
 
 nota_1 = 1
 nota_2 = 5
@@ -11,9 +11,19 @@ nota_4 = 50
 nota_5 = 100
 
 if 10 <= saque < 50:
-    print('Opções:')
-    print('\tR$ 1,00 \t- 9 notas')
-    print('\tR$ 5,00 \t- 2 notas')
-    print('\tR$ 10,00 \t- 4 notas')
-    print('\tR$ 50,00 \t- 1 nota')
-    print('\tR$ 100,00 \t- indisponível')
+    unidade = saque % 10
+    unidade = int(unidade)
+    if 1 <= unidade < 5:
+        print(f'{unidade} notas de 1')
+    elif unidade == 5:
+        print('Uma nota de 5.')
+    elif 5 < unidade <= 9
+        
+    aux = saque % 10
+    dezena = (saque - aux) / 10
+    dezena = int(dezena)
+    print(f'{dezena} notas de 10')
+
+else:
+    print('erro.')
+
