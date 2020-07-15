@@ -11,7 +11,20 @@ print(f"Final size of my_list after removing duplicates: {final_size}")
 dups_removed = initial_size - final_size
 print(f"Number of integers removed: {dups_removed}")
 
-largest_val = 
+largest_val = max(my_list)
+print(f"Largest integer in my_list: {largest_val}")
+
+smallest_val = min(my_list)
+print(f"Smallest integer in my_list: {smallest_val}")
+
+my_tuple = tuple(my_list)
+
+my_tuple_last_val = my_tuple[-1]
+my_tuple_sec_last_val = my_tuple[-2]
+my_tuple_third_last_val = my_tuple[-3]
+print(f"The last 3 values of the tuple are {(my_tuple_third_last_val,my_tuple_sec_last_val,my_tuple_last_val)}")
+
+my_new_tuple = my_tuple[::-1]
 
 print('-'*40)
 print()
