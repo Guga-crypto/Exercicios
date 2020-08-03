@@ -26,6 +26,8 @@ print(f"The last 3 values of the tuple are {(my_tuple_third_last_val,my_tuple_se
 
 my_new_tuple = my_tuple[::-1]
 
+print(f"First integer of my_tuple matches last integer of my_new_tuple is a {comparison} statement")
+
 print('-'*40)
 print()
 
