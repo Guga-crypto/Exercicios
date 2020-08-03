@@ -26,7 +26,12 @@ print(f"The last 3 values of the tuple are {(my_tuple_third_last_val,my_tuple_se
 
 my_new_tuple = my_tuple[::-1]
 
+comparison = my_tuple_last_val in my_new_tuple
+
 print(f"First integer of my_tuple matches last integer of my_new_tuple is a {comparison} statement")
+
+my_other_tuple = my_new_tuple[0:5]
+print(f"My newly created 5 integer tuple is {my_other_tuple}")
 
 print('-'*40)
 print()
